@@ -59,3 +59,17 @@ console.log(person);
 for(let per of person){
     console.log(per);
 }
+
+//priniting key
+for(let key of person.keys()){
+    console.log(key);
+}
+
+for(let key of person.keys()){
+    console.log(typeof key);
+}
+
+//destructuring array
+for(let [key,value] of person){
+    console.log(key,value);
+}
