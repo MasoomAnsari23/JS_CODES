@@ -73,3 +73,7 @@ for(let key of person.keys()){
 for(let [key,value] of person){
     console.log(key,value);
 }
+
+//method 2 of making map
+const pers=new Map([['name', 'masoom'],['age',22],['id',2349]]);
+console.log(pers);
