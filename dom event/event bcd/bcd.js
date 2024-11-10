@@ -23,3 +23,22 @@ document.body.addEventListener("click",()=>{
 //if we click child everythind will be clicked
 //if we click parent everything will be clicked except child
 //and so on
+
+//event capturing: determines how events flow through the DOM
+//Capturing Phase: The event starts from the root of the DOM and moves down towards the target element. This is known as the capturing phase or capture phase.
+child.addEventListener("click",()=>{
+    console.log("capturing!! child");
+},true);
+
+parent.addEventListener("click",()=>{
+    console.log("capturing!! parent");
+},true);
+
+grandparent.addEventListener("click",()=>{
+    console.log("capturing !! grandparent");
+},true);
+
+document.body.addEventListener("click",()=>{
+    console.log("captiring body !!! ");
+},true);
+// this chain will occout from outer most to inner most while in bubbling it occure from innner to outer
