@@ -42,3 +42,9 @@ document.body.addEventListener("click",()=>{
     console.log("captiring body !!! ");
 },true);
 // this chain will occout from outer most to inner most while in bubbling it occure from innner to outer
+
+
+//event deligation:Event delegation is a technique in JavaScript where a single event listener is added to a parent element to handle events for multiple child elements
+grandparent.addEventListener("click",(event)=>{
+    console.log(event.target);
+})
