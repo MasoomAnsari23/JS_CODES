@@ -29,3 +29,6 @@ changeText(heading1,"pakija pari","blue",1000)
 .then(()=>changeText(heading6,"aafrin","blue",1000))
 .then(()=>changeText(heading7,"sufi","green",1000))
 .then(()=>changeText(heading8,"sufiya","purple",1000))
+.catch((error)=>{
+    alert(error);
+})
